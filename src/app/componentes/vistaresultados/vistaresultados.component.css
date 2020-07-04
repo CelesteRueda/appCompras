@@ -1,0 +1,16 @@
+hr{
+    color: gray;
+}
+.contenido{
+    background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.imagen{
+    width: 200px;
+    height: 200px;
+}

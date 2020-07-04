@@ -1,0 +1,22 @@
+.contenidoGeneral{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#barra{
+    width: 800px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#botonlupa {
+    background-image: url('../../../assets/imagenes/lupa.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+}
+img{
+    padding-right: 20px;
+}

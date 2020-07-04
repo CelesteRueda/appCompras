@@ -1,0 +1,12 @@
+<div class="contenidoGeneral">
+    <div class="imagen">
+        <img src="../../../assets/imagenes/Logo_ML.png"/>
+    </div>
+    <div class="barra">
+        <input type="search" id="barra" placeholder="Nunca dejes de buscar" [(ngModel)]="datosBusqueda">
+    </div>
+    <div class="botonlupa">
+        <input type="button" id="botonlupa" (click)="getResultados()">
+    </div>
+</div>
+<app-vistaresultados *ngIf="infoCargada" [Data]="resultados"></app-vistaresultados>

@@ -1,0 +1,16 @@
+<div class="contenido">
+    <div *ngFor="let resultado of Data.results">
+        <div style="display: flex; flex-direction: row;">
+            <div>
+                <img src="{{resultado.thumbnail}}" class="imagen">
+            </div>
+            <div class="valor">
+                ${{resultado.price}} <img src="../../../assets/imagenes/logocamion.png">
+            </div>
+            <div class="descripcion">
+                {{resultado.title}}
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>
