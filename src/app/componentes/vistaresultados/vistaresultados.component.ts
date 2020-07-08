@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-vistaresultados',
@@ -6,12 +6,18 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./vistaresultados.component.css']
 })
 export class VistaresultadosComponent implements OnInit {
-
-  @Input () Data: any;
+  
+  @Input () data: any;
+  @Output () clickDetalles = new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  Descripcion(dato){
+    this.clickDetalles.emit(dato);
+    console.log(dato)
   }
 
 }

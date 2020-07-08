@@ -1,14 +1,16 @@
 <div class="contenido">
-    <div *ngFor="let resultado of Data.results">
-        <div style="display: flex; flex-direction: row;">
+    <div *ngFor="let resultado of data.results">
+        <div class="general" (click)="Descripcion(resultado.id)">
             <div>
                 <img src="{{resultado.thumbnail}}" class="imagen">
             </div>
-            <div class="valor">
-                ${{resultado.price}} <img src="../../../assets/imagenes/logocamion.png">
-            </div>
-            <div class="descripcion">
-                {{resultado.title}}
+            <div style="display: block; flex-direction: column;">
+                <div class="valor">
+                    ${{resultado.price}} <img src="../../../assets/imagenes/logocamion2.png">
+                </div>
+                <div class="descripcion">
+                    {{resultado.title}}
+                </div>
             </div>
         </div>
         <hr>

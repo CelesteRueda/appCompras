@@ -5,8 +5,14 @@
     <div class="barra">
         <input type="search" id="barra" placeholder="Nunca dejes de buscar" [(ngModel)]="datosBusqueda">
     </div>
-    <div class="botonlupa">
-        <input type="button" id="botonlupa" (click)="getResultados()">
+    <div class="lupa">
+        <div class="botonlupa">
+            <input type="button" id="botonlupa" (click)="getResultados()">
+        </div>
     </div>
 </div>
-<app-vistaresultados *ngIf="infoCargada" [Data]="resultados"></app-vistaresultados>
+<div class="ruta">
+    <label>Electrónica, audio y video > Ipod > Reproductores > Ipod Touch > 32GB</label>
+</div>
+<app-vistaresultados *ngIf="infoCargada" [data]="resultados" (clickDetalles)="datoId($event)"></app-vistaresultados>
+<app-detalleproducto *ngIf="infoDetalle" [data]="detalleProducto"></app-detalleproducto>

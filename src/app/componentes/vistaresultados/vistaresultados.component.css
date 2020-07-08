@@ -1,16 +1,33 @@
 hr{
-    color: gray;
+    color: rgb(224, 220, 220);
 }
 .contenido{
     background-color: white;
     margin-left: 150px;
     margin-right: 150px;
     margin-bottom: 100px;
-    margin-top: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .imagen{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+}
+.ruta{
+    color: gray;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.general{
+    display: flex; 
+    flex-direction: row;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    cursor: pointer;
+}
+.valor{
+    padding-bottom: 32px;
+    padding-top: 20px;
 }
